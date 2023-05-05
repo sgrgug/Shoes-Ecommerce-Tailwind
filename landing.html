@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        :root {
+            --primaryColor: #0099FF;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: #f3f3f3; */
+            /* background-color: tomato; */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header-wrapper {
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0px;
+        }
+
+        .header-wrapper .logo {
+            font-weight: bolder;
+            font-size: 2.7rem;
+            color: var(--primaryColor);
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .header-wrapper ul li {
+            display: inline-block;
+            padding: 0px 10px;
+            font-weight: bold;
+        }
+
+        .header-wrapper .side {
+            display: flex;
+            gap: 15px;
+            font-size: 1.3rem;
+        }
+
+        .header-wrapper .side ion-icon {
+            cursor: pointer;
+        }
+
+        .header-wrapper .side ion-icon:hover {
+            cursor: pointer;
+            color: var(--primaryColor);
+        }
+
+        .header-wrapper nav ul li a {
+            color: #000;
+            font-size: 1.2rem;
+        }
+
+        .header-wrapper nav ul li a:hover {
+            color: var(--primaryColor);
+            transition-duration: .3s;
+        }
+
+        section {
+            padding: 3rem 0px;
+        }
+
+        section .wrapper {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        section .wrapper {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            /* flex: 1 1 200px; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        section .wrapper .blog {
+            padding: 3rem 0px;
+            font-size: 2rem;
+            width: 550px;
+            padding: 20px 10px;
+        }
+
+        .wrapper .image img {
+            width: 100%;
+            height: auto;
+        }
+        section .wrapper .blog button {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #fff;
+            border: 3px solid;
+            border-color: var(--primaryColor);
+            cursor: pointer;
+        }
+        section .wrapper .blog button:hover {
+            transition:all 1s ease;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px;
+            background-color: var(--primaryColor);
+            border: 3px solid;
+            border-color: var(--primaryColor);
+        }
+        .menu-btn {
+            display: none;
+        }
+        @media (max-width:480px) {
+            nav {
+                display: none;
+            }
+            .menu-btn {
+                display: block;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div onclick="toggleMenu()" class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="logo">
+                <i>Shoes</i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+            <div class="side">
+                <ion-icon name="search-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="blog">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, excepturi!</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="image">
+                <img src="images/pngwing.com.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Script for Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
