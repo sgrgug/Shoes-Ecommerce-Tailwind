@@ -8,6 +8,21 @@
     <style>
         /* font */
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+        .productsHover {
+            position: relative;
+        }
+
+        .productSub {
+            display: none;
+        }
+
+        .productsHover:hover .productSub {
+            display: block;
+            position: absolute;
+            background-color: #429E9D;
+            width: 100%;
+        }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -33,6 +48,7 @@
         }
     </script>
 </head>
+
 <body>
     <div class="bg-gradient-to-r from-pri-100 via-sec-100 to-tri-100 h-screen">
         <div id="nav_top" class="sticky top-0">
@@ -40,6 +56,27 @@
                 <div class="flex justify-between items-center px-3 lg:px-10 py-3">
                     <div class="font-['Dancing_Script'] text-white text-2xl lg:text-4xl">
                         Shoes
+                    </div>
+
+                    <div id="menu_btn" class="text-white text-2xl lg:hidden">
+                        &#9776;
+                    </div>
+
+                    <div id="menu" class="relative flex lg:flex lg:justify-between lg:items-center text-white space-x-10">
+                        <div class="absolute flex-col lg:flex lg:justify-between lg:items-center space-x-3">
+                            <li class="block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Home</a></li>
+                            <li class="productsHover block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Products
+                                </a>
+                                <ul class="productSub">
+                                    <li class="py-3 px-2 hover:bg-pri-100">Boys</li>
+                                    <li class="py-3 px-2 hover:bg-pri-100">Girls</li>
+                                </ul>
+                            </li>
+                            <li class="block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Blogs</a></li>
+                        </div>
+                        <div>
+                            3
+                        </div>
                     </div>
                 </div>
             </div>
