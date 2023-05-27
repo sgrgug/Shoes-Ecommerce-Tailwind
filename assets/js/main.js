@@ -3,7 +3,7 @@ window.addEventListener('scroll', function () {
     var nav_top = document.getElementById('nav_top');
     var getScrollValue = window.scrollY;
 
-    if (getScrollValue > 100) {
+    if (getScrollValue > 80) {
         nav_top.classList.add('bg-pri-100');
         nav_top.classList.add('shadow-xl');
     } else {
@@ -38,3 +38,8 @@ search_btn.addEventListener('click', function(){
     }
 });
 
+gsap.from("#hero_img",{
+    scale:.1,
+    opacity: 0,
+    duration:2,
+})
