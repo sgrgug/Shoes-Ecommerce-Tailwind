@@ -20,7 +20,7 @@
         .productsHover:hover .productSub {
             display: block;
             position: absolute;
-            background-color: #429E9D;
+            background-color: #48D1CC;
             width: 100%;
         }
     </style>
@@ -50,10 +50,13 @@
 </head>
 
 <body>
+    <div id="search" class="hidden">
+        <input class="w-full p-2 px-5 bg-quad-100" type="text" name="" id="" placeholder="Search Here">
+    </div>
     <div class="bg-gradient-to-r from-pri-100 via-sec-100 to-tri-100 h-screen">
         <div id="nav_top" class="sticky top-0">
             <div class="container m-auto">
-                <div class="flex justify-between items-center px-3 lg:px-10 py-3">
+                <div class="relative flex justify-between items-center px-3 lg:px-10 py-3 lg:static">
                     <div class="font-['Dancing_Script'] text-white text-2xl lg:text-4xl">
                         Shoes
                     </div>
@@ -62,20 +65,20 @@
                         &#9776;
                     </div>
 
-                    <div id="menu" class="relative flex lg:flex lg:justify-between lg:items-center text-white space-x-10">
-                        <div class="absolute flex-col lg:flex lg:justify-between lg:items-center space-x-3">
-                            <li class="block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Home</a></li>
-                            <li class="productsHover block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Products
-                                </a>
-                                <ul class="productSub">
-                                    <li class="py-3 px-2 hover:bg-pri-100">Boys</li>
-                                    <li class="py-3 px-2 hover:bg-pri-100">Girls</li>
-                                </ul>
-                            </li>
-                            <li class="block lg:inline-block"><a class="duration-700 hover:text-pri-100" href="#">Blogs</a></li>
-                        </div>
-                        <div>
-                            3
+                    <div id="menu"
+                        class="hidden absolute -bottom-56 right-0 bg-sec-100 w-full p-3 shadow text-white lg:flex lg:justify-center lg:items-center lg:space-x-10 lg:bg-transparent lg:shadow-none lg:static lg:w-auto lg:p-0 cursor-pointer">
+                        <ul class="lg:flex">
+                            <li class="p-3 hover:text-quad-100"><a href="#">Home</a></li>
+                            <li class="productsHover p-3 hover:text-quad-100"><a href="#">Products</a>
+                                <ul class="productSub lg:mt-4">
+                                    <li class="py-3 px-2 hover:bg-sec-100 hover:text-white text-white">Boys</li>
+                                    <li class="py-3 px-2 hover:bg-sec-100 hover:text-white text-white">Girls</li>
+                                </ul></li>
+                            <li class="p-3 hover:text-quad-100"><a href="#">Blog</a></li>
+                        </ul>
+
+                        <div id="search_btn" class="p-3 text-2xl hover:text-quad-100">
+                            <ion-icon name="search-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -89,6 +92,10 @@
 
     <!-- Javascript -->
     <script src="assets/js/main.js"></script>
+
+    <!-- icon js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 

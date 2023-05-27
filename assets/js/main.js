@@ -24,3 +24,17 @@ menu_btn.addEventListener('click', function(){
         menu.classList.remove('block');
     }
 });
+
+//for menu
+var search = document.getElementById('search');
+var search_btn = document.getElementById('search_btn');
+search_btn.addEventListener('click', function(){
+    if(search.classList.contains('hidden')){
+        search.classList.remove('hidden');
+        search.classList.add('block');
+    }else{
+        search.classList.add('hidden');
+        search.classList.remove('block');
+    }
+});
+
