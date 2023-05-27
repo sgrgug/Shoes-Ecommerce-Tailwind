@@ -1,3 +1,4 @@
+//for header
 window.addEventListener('scroll', function () {
     var nav_top = document.getElementById('nav_top');
     var getScrollValue = window.scrollY;
