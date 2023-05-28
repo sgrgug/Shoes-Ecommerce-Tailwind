@@ -40,6 +40,22 @@ search_btn.addEventListener('click', function(){
 
 gsap.from("#hero_img",{
     scale:.1,
+    x:200,
+    y:-300,
     opacity: 0,
     duration:2,
+})
+
+// second section
+gsap.from("#secSecImg", {
+    scrollTrigger:{
+        trigger: "#secSecImg",
+        scroller: "body",
+        scrub: 3,
+        start: "top 70%",
+        end: "top 30%",
+    },
+    opacity: 0,
+    x:150,
+    duration: 1,
 })

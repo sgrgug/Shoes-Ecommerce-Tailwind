@@ -54,9 +54,11 @@
         <input class="w-full p-2 px-5 bg-quad-100" type="text" name="" id="" placeholder="Search Here">
     </div>
     <div class="bg-gradient-to-r from-pri-100 via-sec-100 to-tri-100 h-screen">
-        <div id="nav_top" class="sticky top-0">
+        <!-- Header -->
+        <div id="nav_top" class="sticky top-0 z-10">
             <div class="container m-auto">
                 <div class="relative flex justify-between items-center px-3 lg:px-10 py-3 lg:static">
+                    <!-- Logo -->
                     <div class="font-['Dancing_Script'] text-white text-2xl lg:text-4xl">
                         Shoes
                     </div>
@@ -78,6 +80,7 @@
                             <li class="p-3 hover:text-quad-100"><a href="#">Blog</a></li>
                         </ul>
 
+                        <!-- Search -->
                         <div id="search_btn" class="p-3 text-2xl hover:text-quad-100">
                             <ion-icon name="search-outline"></ion-icon>
                         </div>
@@ -85,9 +88,11 @@
                 </div>
             </div>
         </div>
+        <!-- Header End -->
 
         <section class="overflow-hidden text-gray-600 body-font">
-            <div class="container mx-auto flex px-15 xl:px-32 py-2 md:py-24 md:flex-row flex-col items-center">
+            <div
+                class="container mx-auto flex px-15 xl:px-32 py-2 md:py-24 md:px-9 md:flex-row flex-wrap-reverse justify-center items-center">
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 class="title-font sm:text-4xl text-2xl mb-4 font-medium text-gray-900">Before they sold out
@@ -104,16 +109,57 @@
                     </div>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-3/6">
-                    <img id="hero_img" class="object-cover object-center rounded" alt="hero" src="assets/images/pngegg (1).png">
+                    <img id="hero_img" class="object-cover object-center rounded" alt="hero"
+                        src="assets/images/pngegg (1).png">
                 </div>
             </div>
         </section>
-
-    </div>
-    <div class="bg-quad-100 h-screen">
-        sagar
     </div>
 
+    <!-- This one feri -->
+    <!-- second section -->
+    <div class="h-screen bg-stone-100">
+        <!-- More Shoe info -->
+        <section class="bg-tri-100 max-w-screen-xl m-auto dark:bg-gray-900">
+            <div class="relative flex">
+                <div class="min-h-screen lg:w-1/3"></div>
+                <div class="hidden w-3/4 min-h-screen bg-quad-100 dark:bg-gray-800 lg:block"></div>
+
+                <div
+                    class="flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
+                    <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+                        Our <span class="text-blue-500">New</span> <br> Shoe
+                    </h1>
+
+                    <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
+                        <img id="secSecImg" class="object-contain object-center w-full lg:w-[32rem] rounded-lg h-96"
+                            src="assets/images/pngwing.com.png"
+                            alt="">
+
+                        <div class="mt-8 lg:px-10 lg:mt-0">
+                            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:w-72">
+                                Lorem ipsum dolor sit amet.
+                            </h1>
+
+                            <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+                                “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
+                                libero ad
+                                tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum,
+                                culpa
+                                aperiam dolorum, obcaecati corrupti aspernatur a. ”
+                            </p>
+
+                            <h3 class="mt-6 text-7xl font-medium text-blue-500"><i>Shoe Name</i></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- This one feri -->
+
+
+    <div class="h-screen"></div>
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
