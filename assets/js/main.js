@@ -52,10 +52,62 @@ gsap.from("#secSecImg", {
         trigger: "#secSecImg",
         scroller: "body",
         scrub: 3,
+        start: "top 90%",
+        end: "top 50%",
+    },
+    opacity: 0,
+    scale: 0.1,
+    duration: 1,
+})
+// second section shoe title
+gsap.from("#shoeContent", {
+    scrollTrigger:{
+        trigger: "#secSecImg",
+        scroller: "body",
+        scrub: 3,
+        start: "top 70%",
+        end: "top 50%",
+    },
+    opacity: 0,
+    duration: 1,
+})
+// second section shoe title
+gsap.from("#shoeTitle", {
+    scrollTrigger:{
+        trigger: "#secSecImg",
+        scroller: "body",
+        scrub: 3,
         start: "top 70%",
         end: "top 30%",
     },
     opacity: 0,
+    y:150,
+    duration: 1,
+})
+// third section shoe title
+gsap.from("#proShoeTitle", {
+    scrollTrigger:{
+        trigger: "#shoeTitle",
+        scroller: "body",
+        scrub: 3,
+        start: "top 20%",
+        end: "top 5%",
+    },
+    opacity: 0,
     x:150,
+    duration: 1,
+})
+// third section shoe title
+gsap.from("#proShoeImg", {
+    scrollTrigger:{
+        trigger: "#proShoeImg",
+        scroller: "body",
+        markers:true,
+        scrub: 3,
+        start: "top 90%",
+        end: "top 60%",
+    },
+    opacity: 0,
+    scale:0.1,
     duration: 1,
 })
