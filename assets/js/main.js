@@ -102,12 +102,85 @@ gsap.from("#proShoeImg", {
     scrollTrigger:{
         trigger: "#proShoeImg",
         scroller: "body",
-        markers:true,
         scrub: 3,
         start: "top 90%",
         end: "top 60%",
     },
     opacity: 0,
     scale:0.1,
+    duration: 1,
+})
+
+// All Gallery Image animation
+gsap.from("#gallerypic1", {
+    scrollTrigger:{
+        trigger: "#gallerypic1",
+        scroller: "body",
+        scrub: 3,
+        start: "top 60%",
+        end: "top 30%",
+    },
+    opacity: 0,
+    y:-200,
+    duration: 1,
+})
+gsap.from("#gallerypic2", {
+    scrollTrigger:{
+        trigger: "#gallerypic2",
+        scroller: "body",
+        scrub: 3,
+        start: "top 40%",
+        end: "top 20%",
+    },
+    opacity: 0,
+    y:-200,
+    duration: 1,
+})
+gsap.from("#gallerypic3", {
+    scrollTrigger:{
+        trigger: "#gallerypic3",
+        scroller: "body",
+        scrub: 3,
+        start: "top 90%",
+        end: "top 60%",
+    },
+    opacity: 0,
+    x:-200,
+    duration: 1,
+})
+gsap.from("#gallerypic4", {
+    scrollTrigger:{
+        trigger: "#gallerypic3",
+        scroller: "body",
+        scrub: 3,
+        start: "top 90%",
+        end: "top 60%",
+    },
+    opacity: 0,
+    x:200,
+    duration: 1,
+})
+gsap.from("#gallerypic5", {
+    scrollTrigger:{
+        trigger: "#gallerypic3",
+        scroller: "body",
+        scrub: 3,
+        start: "top 60%",
+        end: "top 30%",
+    },
+    opacity: 0,
+    y:200,
+    duration: 1,
+})
+gsap.from("#gallerypic6", {
+    scrollTrigger:{
+        trigger: "#gallerypic3",
+        scroller: "body",
+        scrub: 3,
+        start: "top 40%",
+        end: "top 20%",
+    },
+    opacity: 0,
+    y:200,
     duration: 1,
 })
